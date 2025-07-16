@@ -17,12 +17,11 @@ class Utility(commands.Cog):
             
             # Categorias e comandos conforme mostrado na imagem
             categorias = {
-                "🛡️ Moderação": ["clear", "ban", "banid", "unban", "lock", "unlock"],
-                "💰 Economia": ["saldo", "pagar", "trabalhar"],  
-                "ℹ️ Informação": ["ajuda", "userinfo", "serverinfo"],
+                "🛡️ Moderaçã": ["gerarlog", "listlogs", "clear", "ban", "banid", "unban" "lock", "unlock"],
+                "💰 Economia": ["saldo", "pagar", "trabalhar"],
+                "ℹ️ informação": ["ajuda", "userinfo", "serverinfo"],
                 "🎉 Diversão": ["votar", "dado", "moeda", "piada", "ship", "gato"],
                 "🎵 Music": ["play", "skip", "loop" , "stop"],
-                "💬 Importante": ["🪧・guias", "📑・suporte-chat"],
             }
 
             # Adiciona cada categoria ao embed

@@ -1,0 +1,8 @@
+--- Log Gerado pelo Bot Discord ---
+Data e Hora: 2025-07-16 16:18:58
+Comando executado por: alien_dede (ID: 807289292317524038)
+Canal: 🤖・musica (ID: 1392320945405825214)
+Guilda: Comunidade Suporte ao User (ID: 1392304827752513578)
+
+Este é um exemplo de conteúdo de log gerado por uma cog.
+Você pode adicionar qualquer informação relevante aqui.
