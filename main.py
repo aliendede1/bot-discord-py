@@ -27,18 +27,12 @@ async def load_cogs():
         await bot.load_extension('cogs.fun')
         await bot.load_extension('cogs.error_handler')
         await bot.load_extension('cogs.music')
-        await bot.load_extension('cogs.economy')  # Novo cog
+        await bot.load_extension('cogs.economy')
+        await bot.load_extension( 'cogs.log') # Novo cog
         print("Todos os cogs foram carregados com sucesso!")
     except Exception as e:
         print(f"Erro ao carregar cogs: {e}")
 
-
-# Configuração básica
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    filename='/home/pi/bot/bot/bot.log'  # Arquivo de log personalizado
-)
 # deep
 
 async def main():

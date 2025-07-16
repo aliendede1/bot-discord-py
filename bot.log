@@ -124,3 +124,27 @@
 2025-07-16 12:51:46,008 - __main__ - ERROR - Erro crítico!
 2025-07-16 12:51:46,010 - discord.client - INFO - logging in using static token
 2025-07-16 12:51:47,265 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2631dc242638dbccd8eb410b74bef0b6).
+2025-07-16 12:53:26,477 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:53:26,478 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:53:26,480 - discord.client - INFO - logging in using static token
+2025-07-16 12:53:27,792 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 4e9c7d36b231d3c124aa2de3e0ed6081).
+2025-07-16 12:55:07,066 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:55:07,066 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:55:07,069 - discord.client - INFO - logging in using static token
+2025-07-16 12:55:08,406 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2dfdd5c271ceb4a1cd9d186fbd3c0506).
+2025-07-16 12:55:42,938 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:55:42,939 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:55:42,941 - discord.client - INFO - logging in using static token
+2025-07-16 12:55:44,172 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: f7638949452bf492e69bbeea499060cd).
+2025-07-16 12:56:47,276 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:56:47,276 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:56:47,280 - discord.client - INFO - logging in using static token
+2025-07-16 12:56:48,502 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 4778a5c2e979412c70329f6fef2e8cf8).
+2025-07-16 12:58:27,762 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:58:27,763 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:58:27,765 - discord.client - INFO - logging in using static token
+2025-07-16 12:58:29,047 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 91871885fb0b79ac07d1e309416346fe).
+2025-07-16 13:00:08,299 - __main__ - INFO - Bot iniciado!
+2025-07-16 13:00:08,300 - __main__ - ERROR - Erro crítico!
+2025-07-16 13:00:08,303 - discord.client - INFO - logging in using static token
+2025-07-16 13:00:09,766 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: fb4bd143bb9cd253548ef14f112e324b).
