@@ -1,58 +1,64 @@
+import os
+import logging
+import asyncio
+from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-import os
-from dotenv import load_dotenv
-import logging
 
-
+# Carregar variáveis de ambiente
 load_dotenv()
 
-intents = discord.Intents.default()
-intents.message_content = True
-intents.voice_states = True
-intents = discord.Intents.all()
-bot = commands.Bot(command_prefix=['?', '.'], intents=intents)
-
-@bot.event
-async def on_ready():
-    print(f"Bot {bot.user.name} online!")
-    await bot.change_presence(activity=discord.Game(name="Digite ?ajuda"))
-    
-    # Carrega os cogs
-    await load_cogs()
-async def load_cogs():
-    try:
-        await bot.load_extension('cogs.moderation')
-        await bot.load_extension('cogs.utility')
-        await bot.load_extension('cogs.fun')
-        await bot.load_extension('cogs.error_handler')
-        await bot.load_extension('cogs.music')
-        await bot.load_extension('cogs.economy')  # Novo cog
-        print("Todos os cogs foram carregados com sucesso!")
-    except Exception as e:
-        print(f"Erro ao carregar cogs: {e}")
-
-
-# Configuração básica
+# Configuração de logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    filename='/home/pi/bot/bot/bot.log'  # Arquivo de log personalizado
+    filename='bot.log'  # Caminho pode ser ajustado conforme o ambiente
 )
-# deep
-
-async def main():
-    await load_cogs()
-    await bot.start(os.getenv("DISCORD_TOKEN"), reconnect=True) 
-
 logger = logging.getLogger(__name__)
 
-# Exemplo de uso
-logger.info("Bot iniciado!")  # Mensagem informativa
-logger.error("Erro crítico!")  # Mensagem de erro
+# Configuração dos Intents
+intents = discord.Intents.all()
 
+# Instância do bot
+bot = commands.Bot(command_prefix=['?', '.'], intents=intents)
+
+# Evento de quando o bot está pronto
+@bot.event
+async def on_ready():
+    logger.info(f'Bot {bot.user} está online!')
+    await bot.change_presence(activity=discord.Game(name="Digite ?ajuda"))
+    await load_cogs()
+
+# Carregamento dos Cogs
+async def load_cogs():
+    cogs = [
+        'cogs.moderation',
+        'cogs.utility',
+        'cogs.fun',
+        'cogs.error_handler',
+        'cogs.music',
+        'cogs.economy'
+    ]
+    
+    for cog in cogs:
+        try:
+            await bot.load_extension(cog)
+            logger.info(f'✅ Cog carregado: {cog}')
+        except Exception as e:
+            logger.error(f'❌ Erro ao carregar {cog}: {e}')
+
+# Função principal
+async def main():
+    token = os.getenv("DISCORD_TOKEN")
+    if not token:
+        logger.critical("❌ Token do Discord não encontrado no .env.")
+        return
+
+    try:
+        await bot.start(token, reconnect=True)
+    except Exception as e:
+        logger.critical(f'Erro crítico ao iniciar o bot: {e}')
+
+# Ponto de entrada
 if __name__ == "__main__":
-    if not os.getenv('DISCORD_TOKEN'):
-        print("❌ Token não encontrado. Verifique seu arquivo .env")
-    else:
-        bot.run(os.getenv('DISCORD_TOKEN'))
+    asyncio.run(main())
