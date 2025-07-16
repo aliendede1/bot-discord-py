@@ -1,0 +1,126 @@
+2025-07-16 01:47:17,905 - __main__ - INFO - Bot iniciado!
+2025-07-16 01:47:17,905 - __main__ - ERROR - Erro crítico!
+2025-07-16 01:47:17,908 - discord.client - INFO - logging in using static token
+2025-07-16 01:47:19,221 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: f8d79379f79d58a1194aba3dcbae45ca).
+2025-07-16 01:47:43,322 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 01:47:43,323 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 01:47:43,619 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 01:47:43,799 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 01:50:37,324 - discord.player - INFO - ffmpeg process 21126 successfully terminated with return code of 0.
+2025-07-16 01:53:02,908 - discord.player - INFO - ffmpeg process 21903 successfully terminated with return code of 0.
+2025-07-16 01:55:28,630 - discord.player - INFO - ffmpeg process 22681 successfully terminated with return code of 0.
+2025-07-16 01:56:15,865 - discord.player - INFO - ffmpeg process 23498 successfully terminated with return code of -9.
+2025-07-16 01:56:36,691 - discord.player - INFO - ffmpeg process 23742 has not terminated. Waiting to terminate...
+2025-07-16 01:56:36,703 - discord.player - INFO - ffmpeg process 23742 should have terminated with a return code of -9.
+2025-07-16 02:09:47,805 - discord.player - INFO - ffmpeg process 23867 successfully terminated with return code of 0.
+2025-07-16 02:12:12,750 - discord.player - INFO - ffmpeg process 28149 successfully terminated with return code of 0.
+2025-07-16 02:25:23,921 - discord.player - INFO - ffmpeg process 28926 successfully terminated with return code of 0.
+2025-07-16 02:26:05,466 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1392321715203215473 (Guild ID 1392304827752513578)
+2025-07-16 02:26:05,481 - discord.player - INFO - ffmpeg process 885 has not terminated. Waiting to terminate...
+2025-07-16 02:26:05,493 - discord.player - INFO - ffmpeg process 885 should have terminated with a return code of -9.
+2025-07-16 04:53:52,648 - discord.gateway - INFO - Shard ID None has successfully RESUMED session f8d79379f79d58a1194aba3dcbae45ca.
+2025-07-16 06:23:41,120 - discord.gateway - INFO - Shard ID None has successfully RESUMED session f8d79379f79d58a1194aba3dcbae45ca.
+2025-07-16 07:44:51,221 - discord.gateway - INFO - Shard ID None has successfully RESUMED session f8d79379f79d58a1194aba3dcbae45ca.
+2025-07-16 08:03:25,291 - discord.gateway - INFO - Shard ID None has successfully RESUMED session f8d79379f79d58a1194aba3dcbae45ca.
+2025-07-16 09:43:29,939 - discord.gateway - INFO - Shard ID None has successfully RESUMED session f8d79379f79d58a1194aba3dcbae45ca.
+2025-07-16 09:57:46,741 - discord.gateway - INFO - Shard ID None has successfully RESUMED session f8d79379f79d58a1194aba3dcbae45ca.
+2025-07-16 11:59:27,142 - discord.gateway - INFO - Shard ID None has successfully RESUMED session f8d79379f79d58a1194aba3dcbae45ca.
+2025-07-16 12:26:58,450 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:26:58,451 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:26:58,713 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 12:26:58,968 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 12:27:14,952 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1392321715203215473 (Guild ID 1392304827752513578)
+2025-07-16 12:27:46,340 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:27:46,340 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:27:46,600 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 12:27:46,768 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 12:31:32,255 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:31:32,259 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:31:32,262 - discord.client - INFO - logging in using static token
+2025-07-16 12:31:33,612 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 186a72ac4dfd304085897f412b2b6048).
+2025-07-16 12:32:22,763 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:32:22,765 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:32:23,025 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 12:32:23,239 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 12:33:22,735 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:33:22,736 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:33:22,738 - discord.client - INFO - logging in using static token
+2025-07-16 12:33:24,028 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d81354d2dba021a93715a064c460be29).
+2025-07-16 12:35:03,245 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:35:03,245 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:35:03,248 - discord.client - INFO - logging in using static token
+2025-07-16 12:35:04,432 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 300ff7c0fb5f0454e4d8cc156727578f).
+2025-07-16 12:36:43,770 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:36:43,771 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:36:43,773 - discord.client - INFO - logging in using static token
+2025-07-16 12:36:44,884 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 6ef5aeea4e7c36759cf3d5b0ad583c0c).
+2025-07-16 12:37:14,562 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:37:14,566 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:37:14,569 - discord.client - INFO - logging in using static token
+2025-07-16 12:37:15,832 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e92dd213d5c94ff1f8d1d132d97ccb17).
+2025-07-16 12:39:05,201 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:39:05,201 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:39:05,204 - discord.client - INFO - logging in using static token
+2025-07-16 12:39:06,337 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 431124f5429158567cd86faa615ca2bd).
+2025-07-16 12:40:03,666 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:40:03,667 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:40:03,933 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 12:40:04,133 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 12:40:45,693 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:40:45,694 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:40:45,696 - discord.client - INFO - logging in using static token
+2025-07-16 12:40:46,822 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 58df75f2075434fa8dd32d89706042c9).
+2025-07-16 12:41:16,741 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:41:16,746 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:41:17,043 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 12:41:17,223 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 12:41:41,843 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1392321715203215473 (Guild ID 1392304827752513578)
+2025-07-16 12:41:48,381 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:41:48,417 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:41:48,755 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 12:41:49,432 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 12:42:26,252 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:42:26,253 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:42:26,255 - discord.client - INFO - logging in using static token
+2025-07-16 12:42:27,448 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: fba7ad05c15b97c952d9e62b72939108).
+2025-07-16 12:43:26,088 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:43:26,088 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:43:26,090 - discord.client - INFO - logging in using static token
+2025-07-16 12:43:27,286 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2e93b862138770fa54323e5112e65d41).
+2025-07-16 12:43:44,180 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:43:44,182 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:43:44,182 - discord.voice_state - INFO - Connecting to voice...
+2025-07-16 12:43:44,184 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-07-16 12:43:44,559 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11021.discord.media
+2025-07-16 12:43:44,726 - discord.voice_state - INFO - Voice connection complete.
+2025-07-16 12:44:06,805 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:44:06,806 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:44:06,809 - discord.client - INFO - logging in using static token
+2025-07-16 12:44:08,063 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 238ea6b168ae3bfd46a43de5eb5d7a6b).
+2025-07-16 12:44:14,189 - discord.voice_state - INFO - Timed out connecting to voice
+2025-07-16 12:44:14,189 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1392321715203215473 (Guild ID 1392304827752513578)
+2025-07-16 12:44:14,191 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1392321715203215473 (Guild ID 1392304827752513578)
+2025-07-16 12:45:47,328 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:45:47,329 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:45:47,332 - discord.client - INFO - logging in using static token
+2025-07-16 12:45:48,425 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 5a17431e21174e1c7df36049604c1ac5).
+2025-07-16 12:46:45,019 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:46:45,019 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:46:45,023 - discord.client - INFO - logging in using static token
+2025-07-16 12:46:46,315 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: ab703621478a5a67ac64537c493095fd).
+2025-07-16 12:48:25,234 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:48:25,234 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:48:25,237 - discord.client - INFO - logging in using static token
+2025-07-16 12:48:26,510 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 22cf7653123d095dc009e610ed1752ab).
+2025-07-16 12:48:28,420 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:48:28,420 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:48:28,423 - discord.client - INFO - logging in using static token
+2025-07-16 12:48:29,567 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 48b7d578dccdcba8d7cdbab0bf3707bf).
+2025-07-16 12:50:05,695 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:50:05,695 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:50:05,698 - discord.client - INFO - logging in using static token
+2025-07-16 12:50:07,024 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 39c0dd30312659fb0b4d6083312c6891).
+2025-07-16 12:51:46,007 - __main__ - INFO - Bot iniciado!
+2025-07-16 12:51:46,008 - __main__ - ERROR - Erro crítico!
+2025-07-16 12:51:46,010 - discord.client - INFO - logging in using static token
+2025-07-16 12:51:47,265 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2631dc242638dbccd8eb410b74bef0b6).
