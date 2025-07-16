@@ -1,1 +1,2 @@
-# BOTv1-BOTUSSER
+# BOT
+O bot tem 15 funcoes
