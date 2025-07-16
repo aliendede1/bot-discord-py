@@ -1,0 +1,3 @@
+[console_scripts]
+ytsearch = ytsearch.program:main
+
