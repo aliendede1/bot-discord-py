@@ -28,6 +28,7 @@ async def load_cogs():
         await bot.load_extension('cogs.error_handler')
         await bot.load_extension('cogs.music')
         await bot.load_extension('cogs.economy')
+        await bot.load_extension('cogs.ticket')
         await bot.load_extension('cogs.log') # Novo cog
         print("Todos os cogs foram carregados com sucesso!")
     except Exception as e:
