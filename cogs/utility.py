@@ -11,17 +11,18 @@ class Utility(commands.Cog):
         try:
             embed = discord.Embed(
                 title="📋 Central de Ajuda - " + ctx.guild.name,
-                description="Lista de todos os comandos disponíveis:",
+                description="Lista de todos os comandos disponíveis(com o prefixo):",
                 color=discord.Color.blue()
             )
             
             # Categorias e comandos conforme mostrado na imagem
             categorias = {
-                "🛡️ Moderaçã": ["gerarlog", "listlogs", "clear", "ban", "banid", "unban" "lock", "unlock"],
-                "💰 Economia": ["saldo", "pagar", "trabalhar"],
-                "ℹ️ informação": ["ajuda", "userinfo", "serverinfo"],
-                "🎉 Diversão": ["votar", "dado", "moeda", "piada", "ship", "gato"],
+                "🛡️ Moderaao":["?clear", "?ban", "?banid", "?unban","?unlock", "?lock"],
+                "💰 Economia": ["?saldo", "?pagar", "?trabalhar"],
+                "ℹ️ informação": ["?ajuda", "?userinfo", "?serverinfo"],
+                "🎉 Diversão": ["?votar", "?dado", "?moeda", "?piada", "?ship", "?gato"],
                 "🎵 Music": [".play", ".skip", ".loop" , ".stop"],
+                "🗂️ Server": "🪧・guiass", "📑・suporte-chat",  "📕・regras", "📑・ticket"].,
             }
 
             # Adiciona cada categoria ao embed
