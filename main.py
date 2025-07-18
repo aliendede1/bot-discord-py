@@ -8,6 +8,7 @@ import logging
 load_dotenv()
 
 intents = discord.Intents.default()
+intents.members = True
 intents.message_content = True
 intents.voice_states = True
 intents = discord.Intents.all()
@@ -26,9 +27,9 @@ async def load_cogs():
         await bot.load_extension('cogs.utility')
         await bot.load_extension('cogs.fun')
         await bot.load_extension('cogs.error_handler')
-        await bot.load_extension('cogs.music')
         await bot.load_extension('cogs.economy')
         await bot.load_extension('cogs.ticket')
+        await bot.load_extension('cogs.bemv')
         await bot.load_extension('cogs.log') # Novo cog
         print("Todos os cogs foram carregados com sucesso!")
     except Exception as e:

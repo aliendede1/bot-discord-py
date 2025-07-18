@@ -21,7 +21,7 @@ class Utility(commands.Cog):
                 "💰 Economia": ["saldo", "pagar", "trabalhar"],
                 "ℹ️ informação": ["ajuda", "userinfo", "serverinfo"],
                 "🎉 Diversão": ["votar", "dado", "moeda", "piada", "ship", "gato"],
-                "🎵 Music": ["play", "skip", "loop" , "stop"],
+                "🎵 Music": [".play", ".skip", ".loop" , ".stop"],
             }
 
             # Adiciona cada categoria ao embed
