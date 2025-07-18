@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from discord.ui import Select, View
+from discord.ui import Select, View, Button
 
 class TicketSystem(commands.Cog):
     def __init__(self, bot):
@@ -84,7 +84,7 @@ class TicketSystem(commands.Cog):
         }
         
         # Adiciona cargos de staff
-        for role_name in ["Staff", "Moderadores"]:
+        for role_name in ["Suporte", "Mod", "Sub Dono"]:
             role = discord.utils.get(guild.roles, name=role_name)
             if role:
                 overwrites[role] = discord.PermissionOverwrite(read_messages=True)
@@ -107,16 +107,50 @@ class TicketSystem(commands.Cog):
         embed.add_field(name="🔍 Tipo", value=ticket_type, inline=False)
         embed.set_image(url=self.banner_url)  # Usa o banner personalizado
 
-        # Botão para fechar
-        close_button = Button(
-            label="FECHAR TICKET",
-            style=discord.ButtonStyle.danger,
-            emoji="🔒",
-            custom_id=f"fechar_ticket_{user.id}"
-        )
-        
-        view = View(timeout=None)
-        view.add_item(close_button)
+        # Cria o botão de fechar ticket
+        class CloseButtonView(View):
+            def __init__(self):
+                super().__init__(timeout=None)
+                
+            @discord.ui.button(label="FECHAR TICKET", style=discord.ButtonStyle.danger, emoji="🔒", custom_id="close_ticket")
+            async def close_button_callback(self, button_interaction: discord.Interaction, button: discord.ui.Button):
+                # Verifica se é o dono do ticket ou um staff
+                if (button_interaction.user.id == user.id or 
+                    any(role.name in ["Sub Dono", "Mod", "Suporte"] for role in button_interaction.user.roles)):
+                    
+                    # Cria embed de confirmação
+                    confirm_embed = discord.Embed(
+                        title="Ticket Fechado",
+                        description=f"Este ticket foi fechado por {button_interaction.user.mention}",
+                        color=discord.Color.red()
+                    )
+                    
+                    # Remove todos os componentes
+                    self.clear_items()
+                    await button_interaction.response.edit_message(view=self)
+                    
+                    # Envia mensagem de confirmação
+                    await button_interaction.channel.send(embed=confirm_embed)
+                    
+                    # Deleta o canal após 5 segundos
+                    await button_interaction.channel.delete(delay=5)
+                    
+                    # Log de fechamento
+                    log_channel = discord.utils.get(interaction.guild.channels, name="📜ticket-logs")
+                    if log_channel:
+                        await log_channel.send(
+                            f"📭 **Ticket fechado**\n"
+                            f"• Canal: #{button_interaction.channel.name}\n"
+                            f"• Por: {button_interaction.user.mention}\n"
+                            f"• Tipo: {ticket_type}"
+                        )
+                else:
+                    await button_interaction.response.send_message(
+                        "❌ Apenas o dono do ticket ou staff pode fechá-lo!",
+                        ephemeral=True
+                    )
+
+        view = CloseButtonView()
         
         # Mensagem inicial
         await ticket_channel.send(
@@ -151,29 +185,8 @@ class TicketSystem(commands.Cog):
         if interaction.type == discord.InteractionType.component:
             custom_id = interaction.data.get("custom_id", "")
             
-            # Fechar ticket
-            if custom_id.startswith("fechar_ticket"):
-                user_id = int(custom_id.split("_")[-1])
-                
-                if interaction.user.id == user_id or any(role.name in ["Sub Dono", "Mod", "Suporte"] for role in interaction.user.roles):
-                    await interaction.channel.delete()
-                    
-                    # Log de fechamento
-                    log_channel = discord.utils.get(interaction.guild.channels, name="📜ticket-logs")
-                    if log_channel:
-                        await log_channel.send(
-                            f"📭 **Ticket fechado**\n"
-                            f"• Canal: #{interaction.channel.name}\n"
-                            f"• Por: {interaction.user.mention}"
-                        )
-                else:
-                    await interaction.response.send_message(
-                        "❌ Apenas o dono do ticket ou staff pode fechá-lo!",
-                        ephemeral=True
-                    )
-            
             # Seleção de tipo
-            elif custom_id == "ticket_type":
+            if custom_id == "ticket_type":
                 await interaction.response.defer()
                 await self.criar_ticket(interaction, interaction.data["values"][0])
 
