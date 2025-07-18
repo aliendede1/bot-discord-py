@@ -22,7 +22,7 @@ class Utility(commands.Cog):
                 "ℹ️ informação": ["?ajuda", "?userinfo", "?serverinfo"],
                 "🎉 Diversão": ["?votar", "?dado", "?moeda", "?piada", "?ship", "?gato"],
                 "🎵 Music": [".play", ".skip", ".loop" , ".stop"],
-                "🗂️ Server": "🪧・guiass", "📑・suporte-chat",  "📕・regras", "📑・ticket"].,
+                "🗂️ Server": ["🪧・guiass", "📑・suporte-chat",  "📕・regras", "📑・ticket"],
             }
 
             # Adiciona cada categoria ao embed
