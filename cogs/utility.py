@@ -19,7 +19,7 @@ class Utility(commands.Cog):
             categorias = {
                 "🛡️ Moderaao":["?clear", "?ban", "?banid", "?unban","?unlock", "?lock"],
                 "💰 Economia": ["?saldo", "?pagar", "?trabalhar"],
-                "ℹ️ informação": ["?ajuda", "?userinfo", "?serverinfo"],
+                "ℹ️ informação": ["?ajuda", "?userinfo", "?serverinfo", "?xp rank", "?xp list", "?xp level"],
                 "🎉 Diversão": ["?votar", "?dado", "?moeda", "?piada", "?ship", "?gato"],
                 "🎵 Music": [".play", ".skip", ".loop" , ".stop"],
                 "🗂️ Server": ["🪧・guiass", "📑・suporte-chat",  "📕・regras", "📑・ticket"],
