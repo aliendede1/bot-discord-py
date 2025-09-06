@@ -22,7 +22,6 @@ class Utility(commands.Cog):
                 "ℹ️ informação": ["?ajuda", "?userinfo", "?serverinfo", "?xp rank", "?xp list", "?xp level"],
                 "🎉 Diversão": ["?votar", "?dado", "?moeda", "?piada", "?ship", "?gato"],
                 "🎵 Music": [".play", ".skip", ".loop" , ".stop"],
-                "🗂️ Server": ["🪧・guiass", "📑・suporte-chat",  "📕・regras", "📑・ticket"],
             }
 
             # Adiciona cada categoria ao embed
