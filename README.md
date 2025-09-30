@@ -1,6 +1,6 @@
 ## Bot
-criado por André Alencar
-prefixo -> ?
+    criado por André Alencar
+    prefixo -> ?
 
 ## Funçoes DO bot
 - Contem no bot
