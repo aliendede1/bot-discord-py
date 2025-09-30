@@ -5,23 +5,23 @@ prefixo -> ?
 ## Funçoes DO bot
 - Contem no bot
 
-    -[x] Ban
+    - [x] Ban
   
-    -[x] Clear
+    - [x] Clear
   
-    -[x] Ticket
+    - [x] Ticket
   
-    -[x] kick
+    - [x] kick
   
-    -[x] Auto Cargo
+    - [x] Auto Cargo
   
-    -[x] help
+    - [x] help
   
-    -[x] lock
+    - [x] lock
   
-    -[x] unlock
+    - [x] unlock
   
-    -[x] Auto "Bem Vindo"
+    - [x] Auto "Bem Vindo"
 
 
 ## comandos que não estão no ?help
